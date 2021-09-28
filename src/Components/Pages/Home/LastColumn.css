@@ -1,0 +1,57 @@
+
+.container-card-data{
+    width: 100%;
+    overflow-x: auto;
+  }
+.container-card-data table{
+    margin-top: 1rem ;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.container-card-data th{
+    cursor: pointer;
+    font-size: 0.938rem;
+    font-weight: 500;
+    color:#7B7B7B;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    position: sticky;
+  top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.container-card-data td{
+    padding:0.3rem;
+    color:#444444;
+    font-weight: 400;
+    text-align: left;
+    align-items: left;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.container-card-data  tr{
+    height: 2.625rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-card-data  tr:nth-child(odd)  td{
+    background-color: #DEE2E6;
+}
+
+
+.container-card-data  tr#tablehead{
+    background-color: transparent;
+}
+
+

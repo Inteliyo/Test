@@ -1,0 +1,199 @@
+.table-main{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.table-head{
+    min-height: 3rem;
+    background-color: #DEE2E6;
+    border-radius: 1vw 1vw 0 0;
+    padding:0.5rem;
+    padding-top: 0.5rem;
+}
+
+.table_icon_head{
+    width:1.5rem;
+    height: auto;
+}
+
+._table_heading_text{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #6C5B7B;
+    display: inline;
+    margin-left: 1rem;
+    padding-top:0.5rem;
+}
+
+.table-body-main{
+    background-color: white;
+    
+    border-radius:0 0 1vw 1vw;
+}
+
+
+._table_footer{
+    padding:0.5rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    font-size: 0.8rem;
+    bottom:-0.5rem;
+    position: relative;
+}
+
+._table_footer p{
+    display: inline-block;
+}
+
+#head2 #search_button{
+    width: 8rem;
+}
+
+select{
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    color:#C06C84;
+    border: none;
+    border-bottom: 2px solid #C06C84;
+}
+
+nav{
+    display: inline-block;
+    float: right;
+}
+
+.page-link{
+    border:none;
+    color: #C06C84;
+}
+
+
+.table-data-area{
+    overflow-x:auto;
+    width: 100%;
+}
+
+.table-data-area table{
+    margin-top: 0.5rem;
+    padding:1rem;
+    font-size: 0.9rem;
+    display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns: 
+    minmax(2rem, 1fr)
+    minmax(12.5rem, 4fr)
+    minmax(7rem, 1.67fr)
+    minmax(7rem, 1.67fr)
+    minmax(8rem, 1.67fr)
+    minmax(8rem, 1.67fr)
+    minmax(8rem, 1.67fr)
+    minmax(3.5rem, 1.67fr)
+    minmax(3.5rem, 1.67fr);
+}
+
+
+.table-data-area th{
+    font-size: 0.938rem;
+    font-weight: 500;
+    color:#7B7B7B;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    position: sticky;
+  top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table-data-area td{
+    padding:0.3rem;
+    color:#444444;
+    font-weight: 400;
+    text-align: left;
+    align-items: left;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.table-data-area tr{
+    height: 2.625rem;
+    justify-content: space-between;
+    display: contents;
+}
+
+.table-data-area tr:nth-child(odd)  td{
+    background-color: #DEE2E6;
+}
+
+
+.table-data-area tr#tablehead{
+    background-color: transparent;
+}
+
+.red_circle{
+    display: inline-block;
+    width:0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    border-radius: 50%;
+    
+    margin-right: 0.5rem;
+}
+
+.orange_circle{
+    display: inline-block;
+    width:0.5rem;
+    height: 0.5rem;
+    background-color: orange;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.green_circle{
+    display: inline-block;
+    width:0.5rem;
+    height: 0.5rem;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.patient_profile_img{
+    width: 2.0rem;
+    height: 2.0rem;
+    border-radius: 50%;
+}
+
+.checkbox-strike{
+    border:2px soild #C06C84;
+}
+
+table .high{
+    color:red;
+}
+
+table .low{
+    color:green;
+}
+
+table .medium{
+    color:orange;
+}
+
+/* CSS for Medium Screens */
+@media only screen and (max-width:1200px){
+
+}
+
+
+
+/* CSS for smaller Screens */
+@media only screen and (max-width:960px){
+
+}
+

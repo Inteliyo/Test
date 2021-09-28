@@ -1,0 +1,10 @@
+** Task to do
+
+-- Make changes in only Home.css file for writing css for fixing all the contents to 
+   responsive.
+
+-- Do not chnage any files other than Home.css
+-- Fix KPI cards at Home page where 5 cards will be in a row in desktop mode and a toggle button in same row.
+   As screen changes no of cards in a row will get adjusted accordingly
+-- Fix table for responsive view.
+-- Fix bottom pagination and select no of rows in tables.

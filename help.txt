@@ -1,0 +1,95 @@
+## This file is just for helping out developers going through this project
+
+# Library Used
+    - React router ( npm install --save react-router-dom)
+    - Mobiscroll 
+
+# Steps to run the project
+    -- npm install (node version must be 12.22.0)
+    -- npm install --save react-router
+    -- npm install -g @mobiscroll/cli
+    -- mobiscroll login (use the credentials of account connected to mobiscroll)
+    -- mobiscroll config react (for enabling mobiscroll to project)
+
+    ** For running the project use "npm start"
+
+
+## File Structure
+
+---medicare-docg-web-app-frontend
+    --node_modules (Important node modules and libraries)(non-editable)
+    --public (non-editable)
+    --src
+        --Assets (All important media files)
+        --Components
+            --Common
+                --Left Navigation
+                    -LeftNavigation_docg.js
+                    -LeftNavigation_docg.css
+                --Top Navigation
+                    -TopNavigation_docg.js
+                    -TopNavigation_docg.css
+            --Pages
+                --Calendar
+                    -Calendar_docg.js
+                    -Calendar_docg.css
+                --Chats
+                    -Chats_docg.js
+                    -Chats_docg.css
+                --Email
+                    -Email_docg.js
+                    -Email_docg.css
+                --Home
+                    -Home_docg.js
+                    -Home_docg.css
+                --Patient Records
+                    --Add Patient
+                        -AddPatient_docg.js
+                        -AddPatient_docg.css
+                    --Patient List
+                        -PatientList_docg.js
+                        -PatientList_docg.css
+                --Reporting
+                    -Reporting_docg.js
+                    -Reporting_docg.css
+                --Resources
+                    -Resources_docg.js
+                    -Resources_docg.css
+                --Schedules
+                    -Schedules_docg.js
+                    -Schedule_docg.css
+                --Settings
+                    --Fee
+                        -Fee_docg.js
+                        -Fee_docg.css
+                    --Invoice
+                        -Invoice_docg.js
+                        -Invoice_docg.css
+                    --Membership
+                        -Membership_docg.js
+                        -Membership_docg.css
+                    --Notifications
+                        -Notifications_docg.js
+                        -Notifications_docg.css
+                    --Payment
+                        -Payment_docg.js
+                        -Payment_docg.css
+                    --Profile
+                        -Profile_docg.js
+                        -Profile_docg.css
+                    --Symptom Checker
+                        -SymptomChecker_docg.js
+                        -SymptomChecker_docg.css
+        --App.css
+        --App.js
+        --App.test.js
+        --index.css
+        --index.js
+        --logo.svg
+        --reportWebVitals.js
+        --setupTests.js
+        --.gitignore
+        --help.txt
+        --package-lock.json
+        --package.json
+        --README.md

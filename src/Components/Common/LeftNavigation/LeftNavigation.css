@@ -1,0 +1,275 @@
+/* General CSS */
+#sidenavbar-toggler{
+    display: none;
+}
+
+.sidenavbar-panel{
+    width: 16rem;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: #6C5B7B;
+	z-index: 100;
+    transition: width 300ms;
+}
+
+.sidenavbar-brand{
+    height: 3rem;
+}
+#shrink-logo{
+    display: none;
+}
+
+
+
+.sidenavbar-brand img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+}
+
+.userprofile-panel{
+    padding-top: 1rem;
+}
+
+.userprofile-panel img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.userprofile-panel p{
+    color:white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.divider_user_profile{
+    border: 1px solid var(--unnamed-color-000000);
+    border: 1px solid #000000; 
+    opacity: 0.05;
+    width: 75%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.sidebar-menu{
+	margin-top: 1rem;
+    overflow-y: auto;
+    max-height:60vh;
+}
+
+.sidebar-menu li {
+	width: 100%;
+	margin-bottom: 1.2rem;
+}
+
+.sidebar-menu a{
+	display: block;
+	color: #fff;
+	font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.sidebar-menu a:hover ~ .dropdown-menu-container{
+    display: block;
+}
+
+.bottom-text-sidebar{
+    font-size: 0.75rem;
+    color: #968BA3;
+    font-weight: 300;
+    margin-left: 2rem;
+    line-height: 0.4;
+    bottom: 1.5rem;
+    position: fixed;
+}
+
+
+.dropdown-menu-container{
+    margin-top: -0.5rem;
+    display: none;
+    background-color: rgba(5, 5, 5, 0.23);;
+    padding-left: 0.5rem;
+    width: 87%;
+    margin-bottom: 1.2rem;
+    border-radius: 0.25rem;
+    padding-top: 1.2rem;
+    height: auto;
+    padding-left: 1rem;
+    padding-bottom: 0.1rem;
+}
+
+.dropdown-menu-container a{
+    font-size: 0.8rem;
+}
+
+/* .sidebar-menu a.active{
+	background: #fff;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: var(--main-color);
+	border-radius: 30px 0 0 30px;
+} */
+
+.sidebar-menu a span:first-child{
+	padding-right: 1rem;
+}
+
+.sidebar-menu img{
+    height:0.95rem;
+}
+
+.dropdown_icon{
+    position: relative;
+    font-size: 1rem;
+    float: right;
+    padding-right: 2rem;
+}
+
+#dashboard-icon-sidebar img{
+    height:0.7rem;
+}
+
+
+
+#sidenavbar-toggler:checked + .sidenavbar-panel{
+    width: 6rem;
+    transition: width 300ms;
+}
+
+#sidenavbar-toggler:checked +  .sidenavbar-panel #large-logo,
+#sidenavbar-toggler:checked + .sidenavbar-panel .sidemenu-text,
+#sidenavbar-toggler:checked + .sidenavbar-panel #userprofile-name,
+#sidenavbar-toggler:checked + .sidenavbar-panel .bottom-text-sidebar{
+    display: none;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel #shrink-logo{
+    display: inline;
+    height: 2rem;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel .userprofile-panel img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel .sidebar-menu{
+    left:0rem;
+    position: relative;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel .sidebar-menu img{
+    height: 1.2rem;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel .divider_user_profile{
+    margin-top:1rem;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel #dashboard-icon-sidebar img{
+    height: 0.9rem;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel .dropdown_icon img{
+    height: 0.9rem;
+    left:1rem;
+    position: relative;
+    top:-1.5rem;
+}
+
+
+/* CSS for Medium Screens */
+@media only screen and (max-width:1200px){
+
+    #sidenavbar-toggler:checked + .sidenavbar-panel{
+        width: 6rem;
+        transition: width 300ms;
+    }
+
+}
+
+
+
+/* CSS for smaller Screens */
+@media only screen and (max-width:960px){
+    .sidenavbar-panel{
+        width: 0rem;
+        transition: width 300ms;
+    }
+
+    #large-logo, .userprofile-panel, .bottom-text-sidebar{
+        display: none;
+    }
+
+    #sidenavbar-toggler:checked +  .sidenavbar-panel #large-logo{
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    #sidenavbar-toggler:checked + .sidenavbar-panel{
+        width: 16rem;
+        transition: width 300ms;
+    }
+
+    #sidenavbar-toggler:checked + .sidenavbar-panel .userprofile-panel{
+        display: block;
+        padding-top: 1rem;
+    }
+
+    #sidenavbar-toggler:checked + .sidenavbar-panel .userprofile-panel p{
+        color:white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.3rem;
+    }
+    
+
+    #sidenavbar-toggler:checked  + .sidenavbar-panel .bottom-text-sidebar{
+        display: block;
+    }
+
+    #sidenavbar-toggler:checked +  .sidenavbar-panel #large-logo,
+#sidenavbar-toggler:checked + .sidenavbar-panel .sidemenu-text,
+#sidenavbar-toggler:checked + .sidenavbar-panel #userprofile-name,
+#sidenavbar-toggler:checked + .sidenavbar-panel .bottom-text-sidebar{
+    display: inline;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel #shrink-logo{
+    display: none;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel .sidebar-menu{
+    left:-0.5rem;
+    position: relative;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel .sidebar-menu img{
+    height: 1.2rem;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel #dashboard-icon-sidebar img{
+    height: 0.9rem;
+}
+
+#sidenavbar-toggler:checked + .sidenavbar-panel .dropdown_icon img{
+    height: 1rem;
+    left:0rem;
+    position: relative;
+    top:0rem;
+}
+
+
+
+}

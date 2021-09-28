@@ -1,0 +1,232 @@
+.kpi-area{
+  display: grid;
+  grid-template-columns: 99%,1%;
+  
+}
+.kpi-cards-area{
+  width:99%;
+  display: inline;
+  grid-row: 1;
+}
+
+.kpi-triggers-area{
+  width: 1%;
+  display: inline;
+  float: right;
+  grid-row: 1;
+}
+
+.kpi-triggers-area img{
+  width: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.kpi-single-card{
+  min-width: 13rem;
+  margin-top: 1rem;
+  margin-left:-0.5rem;
+  margin-right: -0.6rem;
+}
+
+.kpi-card-header{
+  background-color: #C06C84;
+  border-radius: 1vw 1vw 0 0;
+  height: 1.875rem;
+  font-size: 0.938rem;
+  color:white;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 0.25rem;
+}
+
+.kpi-card-body{
+  background-color: white;
+  height: 5.625rem;
+  border-radius: 0 0 1vw 1vw;
+}
+
+.card{
+  background-color: transparent;
+  border:none;
+}
+
+.kpi-card-icons{
+  margin-top:1rem;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.kpi-card-text-main{
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #6C5B7B;
+  text-align: right;
+  padding-right: 0.5rem;
+  display: block;
+}
+
+.kpi-waiting-text{
+  font-size:2.1rem;
+  font-weight: 600;
+  color: #1AAB73;
+  text-align: center;
+  display: none;
+}
+
+.kpi-card-text-secondary{
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #959595;
+  text-align: right;
+  padding-right: 0.5rem;
+  line-height: 0.1;
+}
+
+#kpi-second-line{
+  margin-top: -0.7rem;
+}
+
+
+@media only screen and (max-width:960px){
+  .kpi-card-text-main{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #6C5B7B;
+    text-align: right;
+    padding-right: 0.5rem;
+  }
+
+  .kpi-card-text-secondary{
+    font-size: 0.55rem;
+    font-weight: 500;
+    color: #959595;
+    line-height: 0.05rem;
+    text-align:right;
+    padding-right: 0.5rem;
+  }
+
+  #kpi-second-line{
+    margin-top: -0.7rem;
+  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  width: 90px;
+  height: 26px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:red ;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #1AAB73;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1AAB73;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(64px);
+  -ms-transform: translateX(64px);
+  transform: translateX(64px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 26px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider:after
+{
+ content:'Offline';
+ color: white;
+ display: block;
+ position: absolute;
+ right:10px;
+ top:2px;
+ float: right;
+ font-size: 15px;
+}
+
+input:checked + .slider:after
+{  
+  content:'Online';
+  color: white;
+ display: block;
+ position: absolute;
+ left:10px;
+ top:2px;
+ float: left;
+ font-size: 15px;
+}
+
+
+.onoffbtn{
+  bottom: 0rem;
+  position: absolute;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+#offline{
+  top:0.5rem;
+  position: relative;
+  color: red;
+}
+
+@media only screen and (max-width:960px){
+  .kpi-card-icons{
+    max-width: 5rem;
+  }
+
+
+}
+
+@media only screen and (max-width:1200px){
+  .kpi-card-icons{
+    max-width: 5rem;
+  }
+
+  
+}

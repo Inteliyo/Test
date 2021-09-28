@@ -1,0 +1,45 @@
+/* General CSS */
+.main-body-area{
+    background-color: #F0F3F5;
+    border-radius: 40px 0 0 40px;
+    height: 100vh;
+    transition: margin-left 300ms;
+    margin-left:16rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+main{
+    margin-top: 5rem;
+    z-index: -100;
+}
+
+
+#sidenavbar-toggler:checked  ~ .main-body-area{
+    margin-left: 6rem;
+    transition: width 300ms;
+}
+
+
+/* CSS for Medium Screens */
+@media only screen and (max-width:1200px){ 
+    #sidenavbar-toggler:checked  ~ .main-body-area{
+        margin-left: 6rem;
+        transition: width 300ms;
+    }
+}
+
+
+
+/* CSS for smaller Screens */
+@media only screen and (max-width:960px){
+    .main-body-area{
+        margin-left: 0;
+        width: width 300ms;
+    }
+
+    #sidenavbar-toggler:checked  ~ .main-body-area{
+        margin-left: 16rem;
+        transition: width 300ms;
+    }
+}
